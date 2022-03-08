@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    width: 100%;
+    height: 74px;
+    padding: 0 20%;
+    font-weight: 400;
+    color:black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+} 
+
+li {
+    list-style: none;
+}
+
+.logo-web{
+    font-weight: 600;
+    color: black;
+}
+
+.main-menu {
+    display: flex; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+
+.main-menu_link{
+    height: inherit;
+    padding: 24px 20px;
+}
+
+.has-children {
+    position: relative;
+    display: inline-block;
+    padding: 24px 20px;
+}
+
+.main-menu_link:hover,
+.has-children:hover {
+    color: rgb(111, 66, 193);
+}
+
+
+.dropdown {
+    display: block;
+}
+
+.main-menu .has-children .dropdown-icon {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    top: 72px;
+    border-top: 2px solid rgb(111, 66, 193);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-item{
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.sub_main-menu_link:hover .sub-dropdown-menu,
+.has-children:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.sub_main-menu_link{
+    max-height: 50px;
+}
+
+.sub-dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    left: 205px;
+    top: 200px;
+    border-top: 2px solid rgb(111, 66, 193);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+}
+
+.sub-dropdown-menu .dropdown-item {
+    color: black;
+}
