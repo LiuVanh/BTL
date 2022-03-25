@@ -43,19 +43,19 @@ register.addEventListener('click', function(e){
     let statusEmail = document.getElementById('statusOfEmail')
     let statusSubject = document.getElementById('statusOfSubject')
     if(checkFirstname() == false){
-        statusFirstname.textContent = 'First name không hợp lệ.Mời nhập lại'
+        statusFirstname.textContent = 'First name không hợp lệ. Mời nhập lại'
         statusFirstname.style.color = 'red'
     }
     if(checkLastname() == false){
-        statusLastname.textContent = 'Last name không hợp lệ.Mời nhập lại'
+        statusLastname.textContent = 'Last name không hợp lệ. Mời nhập lại'
         statusLastname.style.color = 'red'
     }
     if(checkEmail() == false){
-        statusEmail.textContent = 'Email không hợp lệ.Mời nhập lại'
+        statusEmail.textContent = 'Email không hợp lệ. Mời nhập lại'
         statusEmail.style.color = 'red'
     }
     if(checkSubject() == false){
-        statusSubject.textContent = 'Subject không hợp lệ.Mời nhập lại'
+        statusSubject.textContent = 'Subject không hợp lệ. Mời nhập lại'
         statusSubject.style.color = 'red'
     }
     if(checkFirstname() == true && checkLastname() == true && checkEmail() == true && checkSubject() == true){
