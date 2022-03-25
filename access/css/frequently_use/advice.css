@@ -1,0 +1,74 @@
+#advice{
+    height: 822.625px;
+    width: 1519px;
+    padding: 90px 0 90px 0;
+}
+#advice .row1{
+    height: 157px;
+    width: 665px;
+    margin-left: 430px;
+    margin-right: 468px;
+    text-align: center;
+}
+#advice .row1 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    color: #808080;
+}
+#advice .row1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #6f42c1;
+}
+#advice .row1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    color: #808080;
+}
+#advice .colcontent{
+    display: flex;
+    padding: 48px 0 0 0;
+}
+#advice .colcontent .col1{
+    margin-left: 204px;
+}
+#advice .colcontent .rowtitle h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: black;
+}
+#advice .colcontent .rowcontent .flex{
+    display: flex;
+    margin-top: 25px;
+}
+#advice .colcontent .rowcontent .colicons{
+    color: greenyellow;
+}
+#advice .colcontent .rowcontent .colicon{
+    color: rgb(224, 106, 106);
+}
+#advice .colcontent .col2{
+    margin-left: 90px;
+}
+#advice .colcontent .rowcontent .flex .col{
+    padding: 0 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #808080;
+}
+.contentvsimg{
+    position: relative;
+}
+.colimg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 280px;
+    margin-right: 170px;
+}
