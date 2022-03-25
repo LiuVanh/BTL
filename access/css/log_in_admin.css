@@ -6,6 +6,8 @@
     margin:0;
     padding: 0;
     outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 .container{
     display: flex;
@@ -17,18 +19,21 @@
     background: linear-gradient(to bottom right, var(--bg2), var(--bg1));
 }
 .form-login{
-    width:300px;
-    height:500px;
+    width: 35%;
+    height:80%;
     background-color:white;
     border-radius: 10px;
-    padding: 40px 30px;
+    margin: 20px;
 }
 .form-login h1{
     margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    box-shadow: rgba(130, 219, 219, 0.1) 0px 1px 2px 0px;
 }
 .form-login .submitbtn input{
     height: 35px;
-    width: 100%;
+    width: 90%;
     margin-bottom: 30px;
     background: linear-gradient(120deg, var(--bg2), var(--bg1), var(--bg2));
     border: none;
@@ -40,23 +45,31 @@
     background-position: right;
 }
 .form-text{
-    margin-bottom: 40px;
+    margin: 60px 0;
     position: relative;
 }
 .form-text input{
-    width:100%;
+    width:90%;
     height:35px;
     border:none;
     border-bottom: 2px solid #ccc;
     cursor: pointer;
-    padding-left: 12px;
 }
 .form-text label{
     position: absolute;
-    left:12px;
+    left: 20px;
     bottom: 12px;
-    transition: 1s;
+    transition: 0.9s;
 }
 .form-text label.focus{
     transform: translateY(-45px);
+}
+
+.help_info-forgot {
+    color: black;
+
+}
+
+.help_info-forgot:hover {
+    color: rgb(231, 156, 231);
 }

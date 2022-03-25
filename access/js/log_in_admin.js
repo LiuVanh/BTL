@@ -34,11 +34,14 @@ register.addEventListener('click', function(e){
     if(checkUserName() == false){
         statusOfUserName.textContent = 'UserName không hợp lệ. Mời nhập lại'
         statusOfUserName.style.color = 'red' 
+        document.getElementById("form-login_info").style.bottom = '35px'
+        document.getElementById("form-login_info_pw").style.bottom = '35px'
     }
     if(checkPassword() == false){
         statusOfPassword.textContent = 'Password không hợp lệ. Mời nhập lại'
         statusOfPassword.style.color = 'red'
-        statusOfPassword.style.marginTop = '100px'
+        document.getElementById("form-login_info").style.bottom = '35px'
+        document.getElementById("form-login_info_pw").style.bottom = '35px'
     }
     if(checkUserName()==true && checkPassword()==true){
         location.replace("https://sinhvien.tlu.edu.vn/#/login")
