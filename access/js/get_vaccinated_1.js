@@ -54,8 +54,10 @@ function checkDate(){
 
 function checkGender(){
     let Gender = document.getElementById('Gender').value;
+    let isTrue = true;
         if(Gender=="selectGender")
-        return false
+            isTrue = false
+    return isTrue
     }
 
 function checkInsurance(){
@@ -69,8 +71,10 @@ function checkInsurance(){
 
 function checkInjection(){
     let Injection = document.getElementById('Injection').value;
+    let isTrue = true;
         if(Injection=="selectInjection")
-        return false
+            isTrue = false
+        return isTrue
     }
 
 function checkContactAddress(){
@@ -100,12 +104,12 @@ function checkEmail(){
     return false
 }
 
-let register = document.getElementById('btnRegister')
 let cancel = document.getElementById('btnCancel')
-cancel.addEventListener('click', function(e){
-    e.preventDefault()
-    location.replace("https://www.w3schools.com")
+cancel.addEventListener('click', function(f){
+    f.preventDefault()
+    location.replace("index.html")
 })
+let register = document.getElementById('btnRegister')
 register.addEventListener('click', function(e){
     e.preventDefault()
     let statusOfCity = document.getElementById('statusOfCity')
@@ -120,55 +124,55 @@ register.addEventListener('click', function(e){
     let statusOfContactAddress = document.getElementById('statusOfContactAddress')
     let statusOfPhoneNumber = document.getElementById('statusOfPhoneNumber')
     let statusOfEmail = document.getElementById('statusOfEmail')
+    if(checkCity() == true && checkDistrict() == true && checkWards() == true && checkName() == true && checkIdentification() == true && checkDate() == true && checkGender() == true && checkInsurance() == true && checkInjection() == true && checkContactAddress() == true && checkPhoneNumber() == true && checkEmail() == true) {
+        location.replace("https://www.w3schools.com")
+    }
     if(checkCity() == false){
         statusOfCity.textContent = 'Invalid city. Please re-enter'
         statusOfCity.style.color = 'red'
     }
-    else if(checkDistrict() == false){
+    if(checkDistrict() == false){
         statusOfDistrict.textContent = 'Invalid district. Please re-enter'
         statusOfDistrict.style.color = 'red'
     }
-    else if(checkWards() == false){
+    if(checkWards() == false){
         statusOfWards.textContent = 'Invalid wards. Please re-enter'
         statusOfWards.style.color = 'red'
     }
-    else if(checkName() == false){
+    if(checkName() == false){
         statusOfName.textContent = 'Invalid name. Please re-enter'
         statusOfName.style.color = 'red'
     }
-    else if(checkIdentification() == false){
+    if(checkIdentification() == false){
         statusOfIdentification.textContent = 'Invalid identification. Please re-enter'
         statusOfIdentification.style.color = 'red'
     }
-    else if(checkDate() == false){
+    if(checkDate() == false){
         statusOfDate.textContent = 'Invalid date of birth. Please re-enter'
         statusOfDate.style.color = 'red'
     }
-    else if(checkGender() == false){
+    if(checkGender() == false){
         statusOfGender.textContent = 'Please choose your gender'
         statusOfGender.style.color = 'red'
     }
-    else if(checkInsurance() == false){
+    if(checkInsurance() == false){
         statusOfInsurance.textContent = 'Invalid insurance. Please re-enter'
         statusOfInsurance.style.color = 'red'
     }
-    else if(checkInjection() == false){
+    if(checkInjection() == false){
         statusOfInjection.textContent = 'Please choose your injection'
         statusOfInjection.style.color = 'red'
     }
-    else if(checkContactAddress() == false){
+    if(checkContactAddress() == false){
         statusOfContactAddress.textContent = 'Invalid address. Please re-enter'
         statusOfContactAddress.style.color = 'red'
     }
-    else if(checkPhoneNumber() == false){
+    if(checkPhoneNumber() == false){
         statusOfPhoneNumber.textContent = 'Invalid phone number. Please re-enter'
         statusOfPhoneNumber.style.color = 'red'
     }
-    else if(checkEmail() == false){
+    if(checkEmail() == false){
         statusOfEmail.textContent = 'Invalid email. Please re-enter'
         statusOfEmail.style.color = 'red'
-    }
-    else{
-        location.replace("https://www.w3schools.com")
     }
 })
