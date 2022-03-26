@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./access/css/frequently_use/header.css">
+    <link rel="stylesheet" href="access/css/frequently_use/footer.css">
+    <link rel="stylesheet" href="access/css/style_get_vaccinated.css">
+    <title>Covid.</title>
+</head>
+<body>
+    <!--Start: header-->
+    <header>
+        <a class="logo-web" href="">Covid.</a>
+        <ul class="main-menu">
+            <li><a class="main-menu_link" href="">Home</a></li>
+            <li><a class="main-menu_link" href="get_vaccinated.html">Get Vaccinated</a></li>
+            <li><a class="main-menu_link" href="">Symptoms</a></li>
+            <li><a class="main-menu_link" href="">About</a></li>
+            <li><a class="main-menu_link" href="">Blog</a></li>
+            <li><a class="main-menu_link" href="contact.html">Contact</a></li>
+            <li style="position:absolute; right: 0; top: 5;"><a class="login_icon" href="log_in_admin.html"><i class="fa-solid fa-circle-user"></i></a>
+            </li>
+        </ul>
+    </header>
+    <!-- End: header-->
+    <!-- Started:get-vaccinated -->
+    <div class="site-section">
+        <div class="hero-v1">
+            <div class="row-form">
+                <div class="col">
+                    <div class="row"><span>Vaccinated</span></div>
+                    <div class="row"><h1>Get Vaccinated</h1></div>
+                    <div class="row"><p>If you want to get vaccinated, come to us. We will support you to register for vaccination in a convenient and fast way!</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: get-vaccinated -->
+    <!-- Started:form_get-vaccinated -->
+    <div class="form_get_vaccinated">
+        <div class="row-form1">
+            <div class="row1"><h6>1. Unit information</h6></div>
+            <div class="row2">
+                <div class="col">
+                    <div class="row">Province/City</div>
+                    <div class="row"><input id="txtCity" type="text" placeholder="Province/City.."></div>
+                    <span id="statusOfCity"></span>
+                </div>
+                <div class="col">
+                    <div class="row">District</div>
+                    <div class="row"><input id="txtDistrict" type="text" placeholder="District.."></div>
+                    <span id="statusOfDistrict"></span>
+                </div>
+                <div class="col">
+                    <div class="row">Wards</div>
+                    <div class="row"><input id="txtWards" type="text" placeholder="Wards.."></div>
+                    <span id="statusOfWards"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-form2">
+            <div class="row1"><h6>2. Representative information</h6></div>
+            <div class="row2">
+                <div class="col">
+                    <div class="row">First and last name</div>
+                    <div class="row"><input id="txtName" type="text" placeholder="First and last name.."></div>
+                    <span id="statusOfName"></span>
+                </div>
+                <div class="col">
+                    <div class="row">Identification</div>
+                    <div class="row"><input id="txtIdentification" type="text" placeholder="Identification.."></div>
+                    <span id="statusOfIdentification"></span>
+                </div>
+                <div class="col">
+                    <div class="row">Date of birth</div>
+                    <div class="row"><input id="txtDate" type="text" placeholder="Date of birth.."></div>
+                    <span id="statusOfDate"></span>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col">
+                    <div class="row">Gender</div>
+                    <div class="row">
+                        <select id="Gender">
+                            <option value="selectGender">(Please select your gender)</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <span id="statusOfGender"></span>
+                </div>
+                <div class="col">
+                    <div class="row">Health insurance card number</div>
+                    <div class="row"><input id="txtInsurance" type="text" placeholder="Health insurance card number.."></div>
+                    <span id="statusOfInsurance"></span>
+                </div>
+                <div class="col">
+                    <div class="row">Sign up for the injection</div>
+                    <select id="Injection">
+                        <option value="selectInjection">(Please select your injection)</option>
+                        <option value="First injection">First injection</option>
+                        <option value="Next injection">Next injection</option>
+                    </select>
+                    <span id="statusOfInjection"></span>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col">
+                    <div class="row">Contact address</div>
+                    <div class="row"><input id="txtContactAddress" type="text" placeholder="Contact address.."></div>
+                    <span id="statusOfContactAddress"></span>
+                </div>
+                <div class="col">
+                    <div class="row">Phone number</div>
+                    <div class="row"><input id="txtPhoneNumber" type="text" placeholder="Phone number.."></div>
+                    <span id="statusOfPhoneNumber"></span>
+                </div>
+                <div class="col">
+                    <div class="row">Email</div>
+                    <div class="row"><input id="txtEmail" type="text" placeholder="Email.."></div>
+                    <span id="statusOfEmail"></span>
+                </div>
+            </div>
+        </div>
+        <div class="rowbtn">
+            <div class="rowbtncancel">
+                <div class="submitbtn"><input type="submit" name="btnCancel" id="btnCancel" value="Cancel"></div>
+            </div>
+            <div class="rowbtnctn">
+                <div class="submitbtn"><input type="submit" name="btnRegister" id="btnRegister" value="Continue"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End:form_get-vaccinated -->
+    <!-- Started:footer -->
+    <section id="footer" class="container">
+        <div class="row">
+            <div class="col1">
+                <h2>About</h2>
+                <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cumque tenetur inventore veniam, hic vel ipsa needitatibus ducimus architectureo fugiat!</p1><br>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="col2">
+                <h2>Quick Links</h2>
+                <div class="links"><a href="#">Symptoms</a><br></div>
+                <div class="links"><a href="#">Prevention</a><br></div>
+                <div class="links"><a href="#">FAQs</a><br></div>
+                <div class="links"><a href="#">About Coronavirus</a><br></div>
+                <div class="links"><a href="#">Contact Us</a><br></div>
+            </div>
+            <div class="col3">
+                <h2>Helpful Link</h2>
+                <div class="links"><a href="https://www.rcsi.com/dublin/coronavirus/healthcare-professionals">Helathcare Professional</a><br></div>
+                <div class="links"><a href="https://www.lguvscovid.ph/tags/quarantine-facilities">LGU Facilities</a><br></div>
+                <div class="links"><a href="https://www.sidra.org/coronavirus/how-to-protect-your-family-from-covid-19">Protect Your Family</a><br></div>
+                <div class="links"><a href="https://www.worldometers.info/coronavirus/">World Health</a><br></div>
+            </div>
+            <div class="col4">
+                <h2>Resources</h2>
+                <div class="links"><a href="https://www.who.int/">WHO Website</a><br></div>
+                <div class="links"><a href="https://www.cdc.gov/">CDC Website</a><br></div>
+                <div class="links"><a href="https://covid19.gov.vn/">Gov Website</a><br></div>
+                <div class="links"><a href="https://moh.gov.vn/web/ministry-of-health">MOH Website</a><br></div>
+        </div>
+        <div class="row">
+            <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="#">Nhóm 2</a></p>
+        </div>
+    </section>
+    <!-- End: footer-->
+    <script src="access/js/get_vaccinated.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* CSS for section */
+.site-section{
+    height:441px;
+    width:1519.2px;
+    padding:90px 0 90px 0;
+    text-align: center;
+    background-color: rgba(111, 66, 193, 0.1);
+}
+.site-section .hero-v1 .row-form .col{
+    line-height: 27.2px;
+}
+.site-section .hero-v1 .row-form .col .row span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 20.4px;
+    color:rgba(111, 66, 193, 0.5);
+    margin-top: 80px;
+}
+.site-section .hero-v1 .row-form .col .row h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 48px;
+    color:#6F42C1;
+}
+.site-section .hero-v1 .row-form .col .row p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    color:#808080;
+}
+/* CSS for form_get-vaccinated */
+#form_get_vaccinated{
+    height: 807.8px;
+    width: 1519px;
+    padding: 90px 0 90px 0;
+}
+.row1{
+    margin-left: 88px;
+}
+.row1 h6{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color:#6F42C1;
+}
+.row2{
+    margin-left: 103px;
+    display:flex;
+}
+.row{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color:#000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.row input{
+    width:440px;
+    height: 38px;
+    border:1px solid #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.row select{
+    font-size: 16px;
+    width:440px;
+    height: 38px;
+    border:1px solid #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+select{
+    font-size: 16px;
+    width:430px;
+    height: 38px;
+    border:1px solid #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.rowbtn{
+    display:flex;
+}
+.rowbtnctn input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: #6F42C1;
+    margin-top: 31px;
+    margin-left: 50px;
+}
+.rowbtncancel input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: rgb(224, 106, 106);
+    margin-top: 31px;
+    margin-left: 600px;
+}
