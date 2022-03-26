@@ -1,0 +1,93 @@
+#home_intro {
+    display: flex;
+    padding: 8rem 0 2rem 0;
+    border-bottom-right-radius: 50%;
+    background: rgba(111, 66, 193, 0.1);
+    overflow: hidden;
+}
+
+.home_intro-content {
+    text-align: left;
+    max-width: 50%;
+    padding-left: 9rem;
+}
+
+.home_intro-img img {
+    max-width: 70%;
+    height: auto;
+}
+
+.home_intro-content h2 {
+    color: rgb(111, 66, 193);
+    font-weight: 750;
+}
+
+.home_intro-content span {
+    font-size: 14px;
+    font-weight: 750;
+    color: #6f42c1;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.home_intro-content button {
+    color: #fff;
+    background-color: #6f42c1;
+    border-radius: 30px;
+}
+
+.home_intro-content button p {
+    font-size: 15px;
+    margin: 5px 20px;
+}
+
+#covid_statics {
+    display: block;
+    padding: 5rem 0 2rem 0;
+    margin: 0 10%;
+    
+}
+
+.covid_statics-heading {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.covid_statics-heading h3 {
+    color: #6f42c1;
+    font-weight: 750;
+}
+
+.covid_statics-heading p {
+    font-size: 20px;
+}
+
+.covid_statics-number {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.covid_statics-data {
+    display: flex;
+    flex-direction: column;
+    max-width: 33,33%;
+    min-width: 300px;
+    padding: 10px 15px;
+}
+
+.covid_statics-data strong {
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.covid_statics-icon {
+    font-size: 35px;
+    color: #6f42c1;
+}
+
+.covid_statics-data span {
+    font-size: 18px;
+    opacity: 0.6;
+}
