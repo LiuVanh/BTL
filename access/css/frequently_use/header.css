@@ -1,14 +1,14 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 * {
-    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header {
@@ -16,13 +16,22 @@ header {
     display: flex;
     font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-size: 19px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
     width: 100%;
     height: 74px;
     font-weight: 400;
     color:black;
-    background-color: #fff;
+}
+
+header.active {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1003;
 }
 
 a {
@@ -37,16 +46,17 @@ li {
 .logo-web{
     font-weight: 600;
     color: black;
-    padding-left: 20%;
+    margin-left: 13rem;
 }
 
 .main-menu {
     display: flex; 
+    float: right;
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-left: 15rem;
     height: inherit;
-    padding-right: 20%;
 }
 
 .main-menu_link{
@@ -58,12 +68,12 @@ li {
     color: rgb(111, 66, 193);
 }
 
-.fa-circle-user {
-    font-size: 30px;
-    padding: 24px 20px;
-    margin-right: 1em;
+.main-menu .login_icon:hover {
+    color: rgb(111, 66, 193);
 }
 
-.login_icon:hover {
-    color: rgb(111, 66, 193);
+.main-menu .login_icon {
+    padding: 24px 24px;
+    font-size: 32px;
+    margin-left: 8rem;
 }
