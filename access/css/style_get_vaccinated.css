@@ -118,7 +118,6 @@ section {
     height: 807.8px;
     width: 1519px;
     padding: 90px 0 90px 0;
-    z-index: 1000;
 }
 .row1{
     margin-left: 88px;
@@ -164,6 +163,9 @@ select{
     border:1px solid #808080;
     border-radius: 3px;
     margin-bottom: 20px;
+}
+.rowstep1 span{
+    color:red;
 }
 .rowbtn{
     display:flex;
