@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./access/css/frequently_use/header.css">
+    <link rel="stylesheet" href="access/css/frequently_use/footer.css">
+    <link rel="stylesheet" href="access/css/style_get_vaccinated.css"> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+    
+    <title>Covid.</title>
+</head>
+
+<body>
+    <!--Start: header-->
+    <header>
+        <a class="logo-web" href="">Covid.</a>
+        <ul class="main-menu">
+            <li><a class="main-menu_link" href="index.html">Home</a></li>
+            <li><a class="main-menu_link" href="get_vaccinated.html">Get Vaccinated</a></li>
+            <li><a class="main-menu_link" href="">Symptoms</a></li>
+            <li><a class="main-menu_link" href="">About</a></li>
+            <li><a class="main-menu_link" href="">Blog</a></li>
+            <li><a class="main-menu_link" href="contact.html">Contact</a></li>
+            <li style="position:absolute; right: 0; top: 5;"><a class="login_icon" href="log_in_admin.html"><i class="fa-solid fa-circle-user"></i></a>
+            </li>
+        </ul>
+    </header>
+    <!-- End: header-->
+    <!-- Started:get-vaccinated -->
+    <div class="site-section">
+        <div class="hero-v1">
+            <div class="row-form">
+                <div class="col">
+                    <div class="row"><span>Vaccinated</span></div>
+                    <div class="row">
+                        <h1>Get Vaccinated</h1>
+                    </div>
+                    <div class="row">
+                        <p>If you want to get vaccinated, come to us. We will support you to register for vaccination in a convenient and fast way!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: get-vaccinated -->
+    <!-- Started:form_get-vaccinated -->
+    <div class="form_get_vaccinated">
+        <h1 class="text-center">Steps to Register for Injections</h1>
+        <section>
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <div class="steps">
+                        <progress id="progress" value=0 max=100></progress>
+                        <div class="step-item">
+                            <button class="step-button text-center " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Step1
+                            </button>
+                            <div class="step-title">
+                                Personal Information
+                            </div>
+                        </div>
+                        <div class="step-item ">
+                            <button class="step-button text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Step2
+                            </button>
+                            <div class="step-title">
+                                Anamnesis
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <button class="step-button text-center collapsed"  type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Step3
+                            </button>
+                            <div class="step-title">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div id="headingOne">
+
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row1"><h6>1. Unit information</h6></div>
+                                <div class="row2">
+                                    <div class="col">
+                                        <div class="rowstep1">Province/City</div>
+                                        <div class="rowstep1">
+                                            <input id="txtCity" type="text" placeholder="Province/City.."></div>
+                                        <span id="statusOfCity"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">District</div>
+                                        <div class="rowstep1"><input id="txtDistrict" type="text" placeholder="District.."></div>
+                                        <span id="statusOfDistrict"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">Wards</div>
+                                        <div class="rowstep1"><input id="txtWards" type="text" placeholder="Wards.."></div>
+                                        <span id="statusOfWards"></span>
+                                    </div>
+                                </div>
+                                <div class="row1"><h6>2. Representative information</h6></div>
+                                <div class="row2">
+                                    <div class="col">
+                                        <div class="rowstep1">First and last name</div>
+                                        <div class="rowstep1"><input id="txtName" type="text" placeholder="First and last name.."></div>
+                                        <span id="statusOfName"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">Identification</div>
+                                        <div class="rowstep1"><input id="txtIdentification" type="text" placeholder="Identification.."></div>
+                                        <span id="statusOfIdentification"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">Date of birth</div>
+                                        <div class="rowstep1"><input id="txtDate" type="text" placeholder="Date of birth.."></div>
+                                        <span id="statusOfDate"></span>
+                                    </div>
+                                </div>
+                                <div class="row2">
+                                    <div class="col">
+                                        <div class="rowstep1">Gender</div>
+                                        <div class="rowstep1">
+                                            <select id="Gender">
+                                                <option value="selectGender">(Please select your gender)</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <span id="statusOfGender"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">Health insurance card number</div>
+                                        <div class="rowstep1"><input id="txtInsurance" type="text" placeholder="Health insurance card number.."></div>
+                                        <span id="statusOfInsurance"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">Sign up for the injection</div>
+                                        <select id="Injection">
+                                            <option value="selectInjection">(Please select your injection)</option>
+                                            <option value="First injection">First injection</option>
+                                            <option value="Next injection">Next injection</option>
+                                        </select>
+                                        <span id="statusOfInjection"></span>
+                                    </div>
+                                </div>
+                                <div class="row2">
+                                    <div class="col">
+                                        <div class="rowstep1">Contact address</div>
+                                        <div class="rowstep1"><input id="txtContactAddress" type="text" placeholder="Contact address.."></div>
+                                        <span id="statusOfContactAddress"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">Phone number</div>
+                                        <div class="rowstep1"><input id="txtPhoneNumber" type="text" placeholder="Phone number.."></div>
+                                        <span id="statusOfPhoneNumber"></span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rowstep1">Email</div>
+                                        <div class="rowstep1"><input id="txtEmail" type="text" placeholder="Email.."></div>
+                                        <span id="statusOfEmail"></span>
+                                    </div>
+                                </div>
+                                <div class="rowbtn">
+                                    <div class="rowbtncancel">
+                                        <div class="submitbtn"><input type="submit" name="btnCancel" id="btnCancel" value="Cancel"></div>
+                                    </div>
+                                    <div class="rowbtnctn">
+                                        <div class="submitbtn"><input type="submit" name="btnRegister" id="btnRegister" value="Continue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingTwo">
+
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <h4>COVID Vaccine Intake Consent Form</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col">1.Are you sick today?</div>
+                                    <div class="col">
+                                        <input type="radio" name="1" id="No1">No
+                                        <input type="radio" name="1" id="Yes1">Yes
+                                        <span id="statusOf1"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">2.Have you ever had a dose of the COVID-19 vaccine?</div>
+                                    <div class="col">
+                                        <input type="radio" name="2" id="No2">No
+                                        <input type="radio" name="2" id="Yes2">Yes
+                                        <span id="statusOf2"></span>
+                                    </div>  
+                                </div>
+                                <div class="row">
+                                    <div class="col">3.Have you had a severe allergic reaction (e.g. anaphylaxis) in the past?</div>
+                                    <div class="col">
+                                        <input type="radio" name="3" id="No3">No
+                                        <input type="radio" name="3" id="Yes3">Yes
+                                        <span id="statusOf3"></span>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col">4.Have you had any vaccines in the past 14 days?</div>
+                                    <div class="col">
+                                        <input type="radio" name="4" id="No4">No
+                                        <input type="radio" name="4" id="Yes4">Yes
+                                        <span id="statusOf4"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">5.Did you receive monoclonal antibodies or convalescent plasma as part of your treated for COVID-19 in the last 90 days?</div>
+                                    <div class="col">
+                                        <input type="radio" name="5" id="No5">No
+                                        <input type="radio" name="5" id="Yes5">Yes
+                                        <span id="statusOf5"></span>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col">6.Do you have a blood clotting disorder or are you taking blood thinners?</div>
+                                    <div class="col">
+                                        <input type="radio" name="6" id="No6">No
+                                        <input type="radio" name="6" id="Yes6">Yes
+                                        <span id="statusOf6"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">7.For women, are you pregnant or breastfeeding?</div>
+                                    <div class="col">
+                                        <input type="radio" name="7" id="No7">No
+                                        <input type="radio" name="7" id="Yes7">Yes
+                                        <span id="statusOf7"></span>
+                                    </div> 
+                                </div>
+                                <div class="rowbtn2">
+                                    <div class="rowbtncancel2">
+                                        <div class="submitbtn"><input type="submit" name="btnCancel2" id="btnCancel2" value="Cancel"></div>
+                                    </div>
+                                    <div class="rowbtnctn2">
+                                        <div class="submitbtn"><input type="submit" name="btnRegister2" id="btnRegister2" value="Continue"></div>
+                                    </div>
+                                </div>
+                                <script src="step2.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingThree">
+
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="site-sections">
+                                    <div class="hero-v1s">
+                                        <div class="row-forms">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <h1>You have successfully registered</h1>
+                                                </div>
+                                                <div class="row">
+                                                    <p>You will be notified as soon as the vaccination schedule is available!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rowbtn3">
+                                    <div class="rowbtncancel3">
+                                        <div class="submitbtn"><input type="submit" name="btnCancel" id="btnCancel" value="Cancel"></div>
+                                    </div>
+                                    <div class="rowbtnctn3">
+                                        <div class="submitbtn"><input type="submit" name="btnRegister" id="btnRegister" value="Finish"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End:form_get-vaccinated -->
+    <!-- Started:footer -->
+    <section id="footer" class="container">
+        <div class="row">
+            <div class="col1">
+                <h2>About</h2>
+                <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cumque tenetur inventore veniam, hic vel ipsa needitatibus ducimus architectureo fugiat!</p1><br>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="col2">
+                <h2>Quick Links</h2>
+                <div class="links"><a href="#">Symptoms</a><br></div>
+                <div class="links"><a href="#">Prevention</a><br></div>
+                <div class="links"><a href="#">FAQs</a><br></div>
+                <div class="links"><a href="#">About Coronavirus</a><br></div>
+                <div class="links"><a href="#">Contact Us</a><br></div>
+            </div>
+            <div class="col3">
+                <h2>Helpful Link</h2>
+                <div class="links"><a href="https://www.rcsi.com/dublin/coronavirus/healthcare-professionals">Helathcare Professional</a><br></div>
+                <div class="links"><a href="https://www.lguvscovid.ph/tags/quarantine-facilities">LGU Facilities</a><br></div>
+                <div class="links"><a href="https://www.sidra.org/coronavirus/how-to-protect-your-family-from-covid-19">Protect Your Family</a><br></div>
+                <div class="links"><a href="https://www.worldometers.info/coronavirus/">World Health</a><br></div>
+            </div>
+            <div class="col4">
+                <h2>Resources</h2>
+                <div class="links"><a href="https://www.who.int/">WHO Website</a><br></div>
+                <div class="links"><a href="https://www.cdc.gov/">CDC Website</a><br></div>
+                <div class="links"><a href="https://covid19.gov.vn/">Gov Website</a><br></div>
+                <div class="links"><a href="https://moh.gov.vn/web/ministry-of-health">MOH Website</a><br></div>
+            </div>
+            <div class="row">
+                <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="#">Group 2</a></p>
+            </div>
+    </section>
+    <!-- End: footer-->
+    <script src="access/js/get_vaccinated.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

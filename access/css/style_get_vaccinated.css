@@ -1,0 +1,288 @@
+/* CSS for section */
+.site-section{
+    height:441px;
+    width:1519.2px;
+    padding:90px 0 90px 0;
+    text-align: center;
+    background-color: rgba(111, 66, 193, 0.1);
+}
+.site-section .hero-v1 .row-form .col{
+    line-height: 27.2px;
+}
+.site-section .hero-v1 .row-form .col .row span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 20.4px;
+    color:rgba(111, 66, 193, 0.5);
+    margin-top: 80px;
+}
+.site-section .hero-v1 .row-form .col .row h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 48px;
+    color:#6F42C1;
+}
+.site-section .hero-v1 .row-form .col .row p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    color:#808080;
+}
+
+/* CSS for steps */
+:root {
+    --prm-color: #0381ff;
+    --prm-gray: #b1b1b1;
+}
+
+/*  unnecessary */
+/* body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction:column;
+} */
+section {
+    width: 100%;
+}
+
+/*  unnecessary finished*/
+.stepColor {
+    --prm-color: #0381ff;
+    --prm-gray: #b1b1b1;
+}
+.card{
+    z-index: -1;
+}
+/* CSS */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.step-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--prm-gray);
+    transition: .4s;
+}
+
+.step-button[aria-expanded="true"] {
+    width: 60px;
+    height: 60px;
+    background-color: var(--prm-color);
+    color: #fff;
+}
+
+.done {
+    background-color: var(--prm-color);
+    color: #fff;
+}
+
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+
+#progress {
+    -webkit-appearance: none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+    background-color: var(--prm-color);
+    transition: .5s ease;
+}
+
+#progress::-webkit-progress-bar {
+    background-color: var(--prm-gray);
+
+}
+
+/* CSS for step 1*/
+#form_get_vaccinated{
+    height: 807.8px;
+    width: 1519px;
+    padding: 90px 0 90px 0;
+    z-index: 1000;
+}
+.row1{
+    margin-left: 88px;
+}
+.row1 h6{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color:#6F42C1;
+}
+.row2{
+    margin-left: 103px;
+    display:flex;
+}
+.rowstep1{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color:#000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.rowstep1 input{
+    width:350px;
+    height: 38px;
+    border:1px solid #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.rowstep1 select{
+    font-size: 16px;
+    width:350px;
+    height: 38px;
+    border:1px solid #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+select{
+    font-size: 16px;
+    width:340px;
+    height: 38px;
+    border:1px solid #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.rowbtn{
+    display:flex;
+}
+.rowbtnctn input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: #6F42C1;
+    margin-top: 31px;
+    margin-left: 50px;
+}
+.rowbtncancel input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: rgb(224, 106, 106);
+    margin-top: 31px;
+    margin-left: 500px;
+}
+/* CSS for step 2 */
+.row{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#808080;
+    display: flex;
+}
+.row .col input{
+    margin-left: 20px;
+}
+.row h4{
+    color:#6F42C1
+}
+.rowbtn2{
+    display:flex;
+}
+.rowbtnctn2 input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: #6F42C1;
+    margin-top: 31px;
+    margin-left: 50px;
+}
+.rowbtncancel2 input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: rgb(224, 106, 106);
+    margin-top: 31px;
+    margin-left: 500px;
+}
+
+/* CSS for step 3 */
+.site-sections{
+    height:441px;
+    width:1260px;
+    padding:90px 0 90px 0;
+    text-align: center;
+    background-color: rgba(111, 66, 193, 0.1);
+}
+.site-sections .hero-v1s .row-forms .col{
+    line-height: 27.2px;
+}
+.site-sections .hero-v1s .row-forms .col .row h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 48px;
+    color:#6F42C1;
+}
+.site-sections .hero-v1s .row-forms .col .row p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    color:#808080;
+}
+.rowbtn3{
+    display:flex;
+}
+.rowbtnctn3 input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: #6F42C1;
+    margin-top: 31px;
+    margin-left: 50px;
+}
+.rowbtncancel3 input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:white;
+    height:42px;
+    width:150px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: rgb(224, 106, 106);
+    margin-top: 31px;
+    margin-left: 450px;
+}
