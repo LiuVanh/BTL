@@ -32,7 +32,7 @@
 }
 
 .home_intro-content p {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .home_intro-content button {
@@ -47,7 +47,7 @@
     margin: 5px 20px;
 }
 /* End: home intro */
-
+/* ------------------------------------- */
 /* start: Covid statics */
 #covid_statics {
     display: block;
@@ -100,7 +100,7 @@
     opacity: 0.6;
 }
 /* End: covid statics */
-
+/* ------------------------------------- */
 /* Start:about corona part 1 */
 #about-crn_1 {
     display: flex;
@@ -244,7 +244,7 @@
     display: none;
 }
 /* End: about corona part 1*/
-
+/* ------------------------------------- */
 /* Start: about corona part 2 */
 #about-crn_2 {
     display: flex;
@@ -280,3 +280,299 @@
     opacity: 0.8;
 }
 /* End: about corona part 2 */
+/* ------------------------------------- */
+/* Start: how2 prevent */
+#how2-prevent {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(111, 66, 193, 0.05);
+    padding: 60px 90px;
+}
+
+.h2p_col-content {
+    display: flex;
+    margin-right: 20px;
+    height: 640px;
+}
+
+.h2p_sub-col-content_1 {
+    width: 235px;
+    margin-right: 10px;
+    max-height: 300px;
+    padding-top: 50px;
+}
+
+.h2p_sub-col-content_2 {
+    width: 235px;
+    margin-left: 10px;
+    max-height: 300px;
+}
+
+.mini-col_icon {
+    display: flex;
+    font-size: 40px;
+    color: #6f42c1;
+    background-color: rgba(111, 66, 193, 0.2);
+    width: 235px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h2p_mini-col_1 {
+    border: 1px white solid;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+
+.mini-col_content_1 {
+    background-color: #FFF;
+    padding: 15px 20px;
+}
+
+.mini-col_content_1 label {
+    font-size: 19px;
+    font-weight: 500;
+    color: #6f42c1;
+}
+
+.mini-col_content_1 p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.h2p_side-content {
+    margin-left: 30px;
+}
+
+.h2p_side-content h3 {
+    color: #6f42c1;
+    font-weight: 700;
+    padding: 25px 0;
+}
+
+.sml-than-label {
+    width: 425px;
+}
+
+.h2p_side-content p {
+    opacity: 0.7;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.h2p_side-content ul {
+    padding: 0;
+}
+
+.h2p-li_icon {
+    color: #6f42c1;
+    margin-right: 10px;
+}
+
+.h2p_btn {
+    width: 250px;
+    color: #fff;
+    background-color: #6f42c1;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+
+.h2p_btn p {
+    font-size: 12px;
+    padding: 0;
+    opacity: 1;
+    margin: 7px 2px;
+    text-transform: uppercase;
+}
+/* End: how2 prevent */
+/* ------------------------------------- */
+/* Start: symptoms */
+#idx_symptoms {
+    background-color: rgba(111, 66, 193, 0.05);
+    height: 970px;
+}
+
+.st_heading {
+    text-align: center;
+    max-width: 600px;
+    margin:0 auto;
+    margin-top: 90px;
+    padding-top: 90px;
+    margin-bottom: 90px;
+}
+
+.st_heading h3 {
+    color:rgb(111, 66, 193);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.st_heading p {
+    opacity: 0.7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.st_detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 250px;
+    margin-bottom: 40px;
+}
+
+.st_detail-box {
+    display: flex;
+    margin: 10px 10px;
+    padding: 30px;
+    width: 496px;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px 10px;
+    padding: 30px;
+}
+
+.st_img img{
+    width: 80px;
+    height: 102px;
+}
+
+.st_detail-box_content {
+    padding: 10px 20px;
+}
+
+.st_detail-box_content label {
+    color: #6f42c1;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.st_detail-box_content p {
+    opacity: 0.7;
+    font-size: 16px;
+}
+
+.st_dr-advice {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.dr-advice_content {
+    display: inline;
+    width: 500px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dr-advice_content strong {
+    color: #6f42c1;
+    opacity: 1;
+}
+
+.st_dr-advice button {
+    display: inline;
+    width: 140px;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 5px 0px;
+    color: white;
+    background-color: #6f42c1;
+    text-transform: uppercase;
+}
+
+.dr-advice_icon {
+    padding-right: 10px;
+}
+/* End: symptoms */
+/* ------------------------------------- */
+/* Start: News & Articles */
+#news-articles {
+    margin: 0px 250px 90px 250px;
+}
+
+.n-a_heading {
+    text-align: center;
+    max-width: 600px;
+    margin:0 auto;
+    margin-top: 90px;
+    padding-top: 90px;
+    margin-bottom: 90px;
+}
+
+.n-a_heading h3 {
+    color:rgb(111, 66, 193);
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.n-a_heading p {
+    opacity: 0.7;
+    font-size: 19px;
+    text-align: center;
+}
+
+.news-post_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.n-a_post-entry {
+    position: relative;
+    width: 33,3%;
+    margin: 0 15px;
+}
+
+.n-a-p_thumb img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.idx_date-post {
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    padding: 4px 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #6f42c1;
+    color: #FFF;
+    z-index: 2;
+}
+
+.post-reaction {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 15px 18px 15px;
+}
+
+.post-reaction a {
+    color: #AEAEAE;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.7;
+    letter-spacing: 0.1rem;
+}
+
+.n-a-p_title h3 {
+    color: #6f42c1;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+/* End: News & Articles */
