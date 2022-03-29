@@ -1,12 +1,12 @@
-//JS for steps 
+// JS for step
 const stepButtons = document.querySelectorAll('.step-button');
 const progress = document.querySelector('#progress');
 
 Array.from(stepButtons).forEach((button,index) => {
     button.addEventListener('click', () => {
         progress.setAttribute('value', index * 100 /(stepButtons.length - 1) );//there are 3 buttons. 2 spaces.
+
         stepButtons.forEach((item, secindex)=>{
-            console.log(secindex);
             if(index > secindex){
                 item.classList.add('done');
             }
@@ -145,7 +145,8 @@ register1.addEventListener('click', function(e){
     let statusOfPhoneNumber = document.getElementById('statusOfPhoneNumber')
     let statusOfEmail = document.getElementById('statusOfEmail')
     if(checkCity() == true && checkDistrict() == true && checkWards() == true && checkName() == true && checkIdentification() == true && checkDate() == true && checkGender() == true && checkInsurance() == true && checkInjection() == true && checkContactAddress() == true && checkPhoneNumber() == true && checkEmail() == true) {
-        location.replace("https://www.w3schools.com")
+        $("#accordionExample > div.steps > div:nth-child(3) > button").click();
+        
     }
     if(checkCity() == false){
         statusOfCity.textContent = 'Invalid city.'
@@ -283,9 +284,17 @@ function checkVaccineIntakeConsent7(){
     }
     if(x==0){return false}
     }
+    let cancel2 = document.getElementById('btnCancel2')
+    cancel2.addEventListener('click', function(f){
+    f.preventDefault()
+    location.replace("index.html")
+})
     let register2 = document.getElementById('btnRegister2')
     register2.addEventListener('click', function(e){
         e.preventDefault()
+        if(checkVaccineIntakeConsent1() == undefined && checkVaccineIntakeConsent2() == undefined && checkVaccineIntakeConsent3() == undefined && checkVaccineIntakeConsent4() == undefined && checkVaccineIntakeConsent5() == undefined && checkVaccineIntakeConsent6() == undefined && checkVaccineIntakeConsent7() == undefined) {
+            $('#accordionExample > div.steps > div:nth-child(4) > button').click()
+        }
         let statusOf1 = document.getElementById('statusOf1')
         if(checkVaccineIntakeConsent1() == false){
             statusOf1.textContent = 'You must choose yes or no.'
@@ -321,4 +330,9 @@ function checkVaccineIntakeConsent7(){
             statusOf7.textContent = 'You must choose yes or no.'
             statusOf7.style.color = 'red'
         }
+    })
+let register3 = document.getElementById('btnRegister3')
+    register3.addEventListener('click', function(e){
+        e.preventDefault()
+        location.replace("index.html")
     })
