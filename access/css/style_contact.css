@@ -1,3 +1,5 @@
+/* CSS for laptop */
+@media screen and (min-width : 64em){
 /* css for Section */
 .site-section{
     height:441px;
@@ -113,4 +115,275 @@
 }
 .required{
     color:red;
+}
+}
+/* CSS for tablet */
+@media screen and (min-width : 46.25em) and (max-width:63.9375em){
+/* css for Section */
+.site-section .hero-v1{
+    height:174px;
+    width:760px;
+    padding:128px 0 128px 0;
+    text-align: center;
+    background-color: rgba(111, 66, 193, 0.1);
+    position: relative;
+}
+.site-section .hero-v1 .row-form{
+    top:55px;
+    height:174px;
+    width:690px;
+    margin-right: 24px;
+    position: absolute;
+}
+.site-section .hero-v1 .row-form .col{
+    line-height: 27.2px;
+    padding:0 15px 0 15px;
+}
+.site-section .hero-v1 .row-form .col .row span{
+    height:20px;
+    width:690px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20.4px;
+    color:rgba(111, 66, 193, 0.5);
+}
+.site-section .hero-v1 .row-form .col .row h1{
+    height:36px;
+    width:690px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 36px;
+    color:#6F42C1;
+}
+.site-section .hero-v1 .row-form .col .row p{
+    height:54px;
+    width:690px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color:#808080;
+    margin-bottom: 48px;
+}
+/* CSS for FormContact */
+#rowformcontact{
+    height: 962px;
+    width: 768px;
+    padding: 90px 0 90px 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.colform{
+    height: 640px;
+    width: 750px;
+    margin-left: 110px;
+    margin-right: 15px;
+}
+.colform .row{
+    margin-top: 10px;
+}
+.colform .row label{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27.2px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 8px;
+}
+.colform .row input{
+    height: 45px;
+    width: 510px;
+    border: 1px solid #ced4d4;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.colform .row textarea{
+    height: 220px;
+    width: 516px;
+    padding:6px 12px 6px 12px;
+    border: 1px solid #ced4d4;
+    border-radius: 5px;
+    margin-left: 9px;
+}
+.colform .rowbtn input{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #6F42C1;
+    color: white;
+    height: 40px;
+    width: 154px;
+    border:1px solid white;
+    border-radius: 18px;
+    margin-top: 20px;
+}
+.colcontact{
+    height: 627px;
+    width: 475px;
+    padding: 0 15px 0 15px;
+    margin-top: 65px;
+    margin-bottom: 223px;
+    margin-left: 110px;
+}
+.colcontact .row{
+    display: flex;
+    width: 445px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.colcontact .rowcontent .row .col1{
+    color: #6F42C1;
+    width: 40px;
+}
+.colcontact .row .col p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 20px;
+    color: #808080;
+    text-align: left;
+}
+.colcontact .row .col a{
+    color:#6F42C1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.required{
+    color:red;
+}
+}
+/* CSS for mobile */
+@media screen and (max-width : 46.1875em){
+    /* css for Section */
+.site-section .hero-v1{
+    height:202px;
+    width:490px;
+    padding:128px 0 128px 0;
+    text-align: center;
+    background-color: rgba(111, 66, 193, 0.1);
+    position: relative;
+}
+.site-section .hero-v1 .row-form{
+    top:55px;
+    height:202px;
+    width:490px;
+    margin-right: 15px;
+    position: absolute;
+}
+.site-section .hero-v1 .row-form .col{
+    line-height: 27.2px;
+    padding:0 15px 0 15px;
+}
+.site-section .hero-v1 .row-form .col .row span{
+    height:20.4px;
+    width:450px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20.4px;
+    color:rgba(111, 66, 193, 0.5);
+}
+.site-section .hero-v1 .row-form .col .row h1{
+    height:20.4px;
+    width:450px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 36px;
+    color:#6F42C1;
+    margin-bottom: 16px;
+}
+.site-section .hero-v1 .row-form .col .row p{
+    height:81px;
+    width:450px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color:#808080;
+    margin-bottom: 48px;
+}
+/* CSS for FormContact */
+#rowformcontact{
+    height: 962px;
+    width: 768px;
+    padding: 90px 0 90px 0;
+    margin-left: 15px;
+    margin-right: 0;
+}
+.colform{
+    height: 640px;
+    width: 750px;
+    margin-right: 15px;
+}
+.colform .row{
+    margin-top: 10px;
+}
+.colform .row label{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27.2px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 8px;
+}
+.colform .row input{
+    height: 45px;
+    width: 450px;
+    border: 1px solid #ced4d4;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.colform .row textarea{
+    height: 220px;
+    width: 450px;
+    padding:6px 12px 6px 12px;
+    border: 1px solid #ced4d4;
+    border-radius: 5px;
+    margin-left: 9px;
+}
+.colform .rowbtn input{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #6F42C1;
+    color: white;
+    height: 40px;
+    width: 154px;
+    border:1px solid white;
+    border-radius: 18px;
+    margin-top: 20px;
+}
+.colcontact{
+    height: 627px;
+    width: 475px;
+    padding: 0 15px 0 15px;
+    margin-top: 65px;
+    margin-bottom: 223px;
+    margin-left: 0;
+}
+.colcontact .row{
+    display: flex;
+    width: 445px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.colcontact .rowcontent .row .col1{
+    color: #6F42C1;
+    width: 40px;
+}
+.colcontact .row .col p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 20px;
+    color: #808080;
+    text-align: left;
+}
+.colcontact .row .col a{
+    color:#6F42C1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.required{
+    color:red;
+}
 }
