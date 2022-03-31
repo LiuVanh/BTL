@@ -9,8 +9,11 @@
     height:623.4px;
     width:1519.2px;
     padding:128px 0px 128px 0px;
-    display:block;
+    display:flex;
     margin-left: 201px;
+}
+#footer .row {
+    display: flex;
 }
 #footer .col1{
     font-family:Arial, Helvetica, sans-serif;
