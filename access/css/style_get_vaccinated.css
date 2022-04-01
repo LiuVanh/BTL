@@ -274,7 +274,7 @@ select{
 }
 }
 /* CSS for tablet */
-@media screen and (min-width : 46.25em) and (max-width:63.9375em){
+@media screen and (min-width : 46.1875em) and (max-width:64em){
 :root {
     --prm-color: #0381ff;
     --prm-gray: #b1b1b1;
@@ -590,7 +590,7 @@ section{
 #progress {
   -webkit-appearance:none;
     position: absolute;
-    width: 95%;
+    width: 90%;
     z-index: 5;
     height: 10px;
     margin-left: 18px;
@@ -623,7 +623,7 @@ section{
 .text-center h1{
     font-family: Arial, Helvetica, sans-serif;
     color:#6F42C1;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 900;
 }
 .site-section .hero-v1 .row-form .col .row span{
@@ -653,9 +653,6 @@ section{
     width: 1519px;
     padding: 90px 0 90px 0;
 }
-.row1{
-    margin-left: 20px;
-}
 .row1 h6{
     margin-top: 20px;
     font-size: 16px;
@@ -663,9 +660,6 @@ section{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 24px;
     color:#6F42C1;
-}
-.row2{
-    margin-left: 20px;
 }
 .rowstep1{
     font-size: 16px;
@@ -676,7 +670,7 @@ section{
     margin-top: 10px;
 }
 .rowstep1 input{
-    width:640px;
+    width:470px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
@@ -684,7 +678,7 @@ section{
 }
 .rowstep1 select{
     font-size: 16px;
-    width:640px;
+    width:470px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
@@ -692,7 +686,7 @@ section{
 }
 select{
     font-size: 16px;
-    width:640px;
+    width:470px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
@@ -726,7 +720,7 @@ select{
     border-radius: 20px;
     background-color: rgb(224, 106, 106);
     margin-top: 31px;
-    margin-left: 170px;
+    margin-left: 40px;
 }
 /* CSS for step 2 */
 .row{
@@ -737,7 +731,7 @@ select{
     color:#808080;
 }
 .row .col p{
-    width: 450px;
+    width: 200px;
 }
 .row .col input{
     margin-left: 20px;
@@ -773,13 +767,11 @@ select{
     border-radius: 20px;
     background-color: rgb(224, 106, 106);
     margin-top: 31px;
-    margin-left: 170px;
+    margin-left: 40px;
 }
 
 /* CSS for step 3 */
 .site-sections{
-    height:441px;
-    width:670px;
     padding:90px 0 90px 0;
     text-align: center;
     background-color: rgba(111, 66, 193, 0.1);
@@ -787,8 +779,22 @@ select{
 .site-sections .hero-v1s .row-forms .col{
     line-height: 27.2px;
 }
+.text-center h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#6F42C1;
+    font-size: 25px;
+    font-weight: 900;
+}
+.site-sections .hero-v1s .row-forms .col .row span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 20.4px;
+    color:rgba(111, 66, 193, 0.5);
+    margin-top: 80px;
+}
 .site-sections .hero-v1s .row-forms .col .row h1{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 48px;
@@ -796,7 +802,7 @@ select{
 }
 .site-sections .hero-v1s .row-forms .col .row p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 27.2px;
     color:#808080;
 }
@@ -810,6 +816,6 @@ select{
     border-radius: 20px;
     background-color: #6F42C1;
     margin-top: 31px;
-    margin-left: 260px;
+    margin-left: 150px;
 }
 }
