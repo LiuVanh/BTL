@@ -20,12 +20,13 @@
 }
 .form-login{
     width: 35%;
-    height:80%;
+    height:60%;
     background-color:white;
     border-radius: 10px;
     margin: 20px;
 }
-.form-login h1{
+.form-login h3{
+    text-align: left;
     margin-bottom: 40px;
     padding: 20px;
     border-bottom: 1px solid black;
@@ -54,7 +55,7 @@
     border:none;
     border-bottom: 2px solid #ccc;
     cursor: pointer;
-}
+}   
 .form-text label{
     position: absolute;
     left: 20px;

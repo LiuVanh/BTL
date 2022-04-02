@@ -9,41 +9,41 @@ const formLogin = document.querySelectorAll('.form-text input')
                         formLabel[i].classList.remove('focus')}
                 })
             }
-function checkUserName(){
-    let UserName = document.getElementById('txtUserName');
-    let UserNameRegex = /^[a-zA-Z]+$/;
-    if(UserNameRegex.test(UserName.value)){
+function checNew(){
+    let New = document.getElementById('txtNew');
+    let NewRegex = /^[a-zA-Z]+$/;
+    if(NewRegex.test(New.value)){
         return true
     }
     return false
 }
 
-function checkPassword(){
-    let password = document.getElementById('txtPassword');
-    let passwordRegex = /^[0-9]+$/;
-    if(passwordRegex.test(password.value)){
-        return true
+function checkConfirmation(){
+    let New = document.getElementById('txtNew');
+    let Confirmation = document.getElementById('txtConfirmation');
+    if(Confirmation.value == New.value){
+        return true;
     }
-    return false
+    return false;
 }
 let register = document.getElementById('btnRegister')
 register.addEventListener('click', function(e){
     e.preventDefault()
-    let statusOfUserName = document.getElementById('statusOfUserName')
-    let statusOfPassword = document.getElementById('statusOfPassword')
-    if(checkUserName() == false){
-        statusOfUserName.textContent = 'Username is not valid. Please re-enter'
-        statusOfUserName.style.color = 'red' 
+    let statusOfNew = document.getElementById('statusOfNew')
+    let statusOfConfirmation = document.getElementById('statusOfConfirmation')
+    if(checNew() == false){
+        statusOfNew.textContent = 'Password is not valid. Please re-enter'
+        statusOfNew.style.color = 'red' 
         document.getElementById("form-login_info").style.bottom = '35px'
         document.getElementById("form-login_info_pw").style.bottom = '35px'
     }
-    if(checkPassword() == false){
-        statusOfPassword.textContent = 'Password is not valid. Please re-enter'
-        statusOfPassword.style.color = 'red'
+    if(checkConfirmation() == false){
+        statusOfConfirmation.textContent = 'Password is not valid. Please re-enter'
+        statusOfConfirmation.style.color = 'red'
         document.getElementById("form-login_info").style.bottom = '35px'
         document.getElementById("form-login_info_pw").style.bottom = '35px'
     }
-    if(checkUserName()==true && checkPassword()==true){
-        location.href="index.html"
+    if(checNew()==true && checkConfirmation()==true){
+        location.href="log_in_admin.html"
     }
 })

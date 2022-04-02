@@ -20,14 +20,14 @@
 }
 .form-login{
     width: 35%;
-    height:80%;
+    height:50%;
     background-color:white;
     border-radius: 10px;
-    margin: 20px;
+    margin: 60px;
 }
-.form-login h1{
-    margin-bottom: 40px;
-    padding: 20px;
+.form-login h3{
+    text-align: left;
+    padding:20px 20px 0 20px;
     border-bottom: 1px solid black;
     box-shadow: rgba(130, 219, 219, 0.1) 0px 1px 2px 0px;
 }
@@ -45,7 +45,7 @@
     background-position: right;
 }
 .form-text{
-    margin: 60px 0;
+    margin: 70px 0;
     position: relative;
 }
 .form-text input{
@@ -58,7 +58,7 @@
 .form-text label{
     position: absolute;
     left: 20px;
-    bottom: 12px;
+    bottom: 20px;
     transition: 0.9s;
 }
 .form-text label.focus{
