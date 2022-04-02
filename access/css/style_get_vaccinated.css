@@ -353,7 +353,7 @@ section{
 .text-center h1{
     font-family: Arial, Helvetica, sans-serif;
     color:#6F42C1;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
 }
 .site-section .hero-v1 .row-form .col .row span{
@@ -628,24 +628,26 @@ section{
 }
 .site-section .hero-v1 .row-form .col .row span{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 900;
     line-height: 20.4px;
     color:rgba(111, 66, 193, 0.5);
     margin-top: 80px;
 }
 .site-section .hero-v1 .row-form .col .row h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 48px;
     color:#6F42C1;
 }
 .site-section .hero-v1 .row-form .col .row p{
+    padding:0 0 0 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 27.2px;
     color:#808080;
+    margin-right: 10px;
 }
 /* CSS for step 1*/
 #form_get_vaccinated{
@@ -670,7 +672,7 @@ section{
     margin-top: 10px;
 }
 .rowstep1 input{
-    width:470px;
+    width:325px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
@@ -678,7 +680,7 @@ section{
 }
 .rowstep1 select{
     font-size: 16px;
-    width:470px;
+    width:325px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
@@ -686,7 +688,7 @@ section{
 }
 select{
     font-size: 16px;
-    width:470px;
+    width:325px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
@@ -708,7 +710,7 @@ select{
     border-radius: 20px;
     background-color: #6F42C1;
     margin-top: 31px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .rowbtncancel input{
     font-family: Arial, Helvetica, sans-serif;
@@ -720,7 +722,6 @@ select{
     border-radius: 20px;
     background-color: rgb(224, 106, 106);
     margin-top: 31px;
-    margin-left: 40px;
 }
 /* CSS for step 2 */
 .row{
