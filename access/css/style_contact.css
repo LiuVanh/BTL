@@ -122,7 +122,7 @@
 /* css for Section */
 .site-section .hero-v1{
     height:174px;
-    width:760px;
+    width:837px;
     padding:128px 0 128px 0;
     text-align: center;
     background-color: rgba(111, 66, 193, 0.1);
@@ -131,19 +131,23 @@
 .site-section .hero-v1 .row-form{
     top:55px;
     height:174px;
-    width:690px;
-    margin-right: 24px;
+    width:95%;
     position: absolute;
 }
 .site-section .hero-v1 .row-form .col{
+    width:89%;
     line-height: 27.2px;
-    padding:0 15px 0 15px;
+    padding:0 0 0 0;
+    margin: 0 0 0 80px;
+}
+.site-section .hero-v1 .row-form .col .row{
+    margin:0 0 0 0;
 }
 .site-section .hero-v1 .row-form .col .row span{
     height:20px;
     width:690px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 900;
     line-height: 20.4px;
     color:rgba(111, 66, 193, 0.5);
@@ -170,19 +174,20 @@
 /* CSS for FormContact */
 #rowformcontact{
     height: 962px;
-    width: 768px;
-    padding: 90px 0 90px 0;
-    margin-left: 0;
-    margin-right: 0;
+    width: 100%;
+    padding: 70px 0 90px 0;
+    margin: 0 0 0 0;
 }
 .colform{
     height: 640px;
-    width: 750px;
-    margin-left: 110px;
-    margin-right: 15px;
+    width: 88%;
+    margin: 0 0 0 80px;
 }
 .colform .row{
-    margin-top: 10px;
+    margin: 20px 0 20px 0;
+}
+.colform .row .rowtext{
+    width: 200px;
 }
 .colform .row label{
     font-weight: 400;
@@ -193,18 +198,22 @@
 }
 .colform .row input{
     height: 45px;
-    width: 510px;
+    width: 100%;
     border: 1px solid #ced4d4;
     border-radius: 5px;
     margin-left: 10px;
 }
 .colform .row textarea{
     height: 220px;
-    width: 516px;
+    width: 100%;
     padding:6px 12px 6px 12px;
     border: 1px solid #ced4d4;
     border-radius: 5px;
     margin-left: 9px;
+}
+.colform .rowbtn{
+    width: 200px;
+    margin-top: 20px;
 }
 .colform .rowbtn input{
     font-size: 15px;
@@ -213,18 +222,14 @@
     background-color: #6F42C1;
     color: white;
     height: 40px;
-    width: 154px;
     border:1px solid white;
     border-radius: 18px;
-    margin-top: 20px;
 }
 .colcontact{
     height: 627px;
-    width: 475px;
+    width: 100%;
     padding: 0 15px 0 15px;
-    margin-top: 65px;
-    margin-bottom: 223px;
-    margin-left: 110px;
+    margin: 110px 0 0 80px;
 }
 .colcontact .row{
     display: flex;
@@ -257,26 +262,32 @@
     /* css for Section */
 .site-section .hero-v1{
     height:202px;
-    width:490px;
+    width:100%;
     padding:128px 0 128px 0;
-    text-align: center;
     background-color: rgba(111, 66, 193, 0.1);
     position: relative;
 }
 .site-section .hero-v1 .row-form{
     top:55px;
     height:202px;
-    width:490px;
-    margin-right: 15px;
+    width:95%;
+    margin-left: 30px;
     position: absolute;
 }
 .site-section .hero-v1 .row-form .col{
+    width:89%;
     line-height: 27.2px;
-    padding:0 15px 0 15px;
+    padding:0 0 0 0;
+    margin: 0 0 0 30px;
+}
+.site-section .hero-v1 .row-form .col .row{
+    margin:0 0 0 0;
 }
 .site-section .hero-v1 .row-form .col .row span{
+    padding:0 0 0 0;
+    text-align:center;
     height:20.4px;
-    width:450px;
+    width:80%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 900;
@@ -284,18 +295,22 @@
     color:rgba(111, 66, 193, 0.5);
 }
 .site-section .hero-v1 .row-form .col .row h1{
+    padding:0 0 0 0;
+    text-align:center;
     height:20.4px;
-    width:450px;
+    width:80%;
     font-size: 30px;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 36px;
     color:#6F42C1;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .site-section .hero-v1 .row-form .col .row p{
+    padding:0 0 0 0;
+    text-align:center;
     height:81px;
-    width:450px;
+    width:80%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -306,15 +321,15 @@
 /* CSS for FormContact */
 #rowformcontact{
     height: 962px;
-    width: 768px;
-    padding: 90px 0 90px 0;
+    width: 100%;
+    padding: 70px 0 90px 0;
     margin-left: 15px;
     margin-right: 0;
 }
 .colform{
+    margin:0 0 0 0;
     height: 640px;
-    width: 750px;
-    margin-right: 15px;
+    width: 88%;
 }
 .colform .row{
     margin-top: 10px;
@@ -355,17 +370,21 @@
 }
 .colcontact{
     height: 627px;
-    width: 475px;
+    width: 80%;
     padding: 0 15px 0 15px;
     margin-top: 65px;
     margin-bottom: 223px;
     margin-left: 0;
+    margin-right:0;
 }
 .colcontact .row{
     display: flex;
     width: 445px;
     margin-top: 24px;
     margin-bottom: 16px;
+}
+.colcontact .rowcontent .row{
+    width: 100%;
 }
 .colcontact .rowcontent .row .col1{
     color: #6F42C1;
