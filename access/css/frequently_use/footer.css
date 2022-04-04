@@ -188,7 +188,7 @@
 }
 /* CSS for tablet */
 @media screen and (min-width : 46.25em) and (max-width:63.9375em){
-    #footer{
+#footer{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27.2px;

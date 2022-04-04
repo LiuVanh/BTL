@@ -131,7 +131,7 @@ section{
     margin-top: 10px;
 }
 .rowstep1 input{
-    width:100%;
+    width:90%;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
@@ -181,7 +181,7 @@ select{
     border-radius: 20px;
     background-color: rgb(224, 106, 106);
     margin-top: 31px;
-    margin-left: 500px;
+    margin-left: 475px;
 }
 /* CSS for step 2 */
 .row{
@@ -284,6 +284,7 @@ section{
 }
 /* CSS */
 .steps {
+    width:710px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -340,12 +341,22 @@ section{
 .card{
     border:1px solid white;
 }
+.container{
+    padding:0 0 0 0;
+}
+.text-center{
+    margin-top:20px;
+}
 
 /* CSS for section */
 .site-section{
+    width:96.7%;
     padding:90px 0 90px 0;
     text-align: center;
     background-color: rgba(111, 66, 193, 0.1);
+}
+.site-section .hero-v1 .row-form .col .row{
+    margin-right: 0;
 }
 .site-section .hero-v1 .row-form .col{
     line-height: 27.2px;
@@ -362,7 +373,8 @@ section{
     font-weight: 900;
     line-height: 20.4px;
     color:rgba(111, 66, 193, 0.5);
-    margin-top: 80px;
+    margin-top: 0;
+    padding:0 0 0 0;
 }
 .site-section .hero-v1 .row-form .col .row h1{
     font-size: 40px;
@@ -370,18 +382,24 @@ section{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 48px;
     color:#6F42C1;
+    padding:0 0 0 0;
 }
 .site-section .hero-v1 .row-form .col .row p{
+    width:730px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27.2px;
     color:#808080;
+    padding:0 0 0 0;
 }
 /* CSS for step 1*/
 #form_get_vaccinated{
     height: 807.8px;
     width: 1519px;
     padding: 90px 0 90px 0;
+}
+.card-body{
+    padding: 0 0 0 0;
 }
 .row1{
     margin-left: 20px;
@@ -509,12 +527,16 @@ select{
 /* CSS for step 3 */
 .site-sections{
     height:441px;
-    width:670px;
+    width:97%;
     padding:90px 0 90px 0;
     text-align: center;
     background-color: rgba(111, 66, 193, 0.1);
 }
+.site-sections .hero-v1s .row-forms .col .row{
+    margin:10px 0 0 0;
+}
 .site-sections .hero-v1s .row-forms .col{
+    margin-top: 50px;
     line-height: 27.2px;
 }
 .site-sections .hero-v1s .row-forms .col .row h1{
@@ -523,12 +545,14 @@ select{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 48px;
     color:#6F42C1;
+    padding:0 0 0 0;
 }
 .site-sections .hero-v1s .row-forms .col .row p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27.2px;
     color:#808080;
+    padding:0 0 0 0;
 }
 .rowbtnctn3 input{
     font-family: Arial, Helvetica, sans-serif;
@@ -541,6 +565,26 @@ select{
     background-color: #6F42C1;
     margin-top: 31px;
     margin-left: 260px;
+}
+#footer{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    text-decoration: none;
+    height:631.4px;
+    width:600px !important;
+    padding:0 0 0 0;
+    margin:140px 0 0 50px !important;
+}
+#footer .row p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.8px;
+    line-height: 21.76px;
+    color: #808080;
+    width:80%;
+    height:150px;
+    margin:0 0 0 70px !important;
+    padding:48px 0 0 0;
 }
 }
 /* CSS for mobile */
@@ -610,10 +654,13 @@ section{
 .card{
     border:1px solid white;
 }
+.text-center{
+    margin-top:20px;
+}
 
 /* CSS for section */
 .site-section{
-    padding:90px 0 90px 0;
+    padding:0 0 90px 0;
     text-align: center;
     background-color: rgba(111, 66, 193, 0.1);
 }
@@ -625,6 +672,9 @@ section{
     color:#6F42C1;
     font-size: 25px;
     font-weight: 900;
+}
+.site-section .hero-v1 .row-form .col .row{
+    margin:0 0 0 10px;
 }
 .site-section .hero-v1 .row-form .col .row span{
     font-family: Arial, Helvetica, sans-serif;
@@ -642,6 +692,7 @@ section{
     color:#6F42C1;
 }
 .site-section .hero-v1 .row-form .col .row p{
+    width:100%;
     padding:0 0 0 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
