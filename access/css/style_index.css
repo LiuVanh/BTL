@@ -205,12 +205,11 @@
     display: none;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 47%;
     max-width: 600px;
     max-height: 360px;
     margin-left: -300px;
     margin-top: -180px;
-    border: 2px solid #FFF;
     background: #FFF;
     z-index: 1002;
     overflow: visible;
@@ -228,8 +227,8 @@
     line-height: 0px;
     padding: 10px 2px;
     position: absolute;
-    right: 1px;
-    top: 1px;
+    right: -113px;
+    top: 4px;
     z-index: 1002;
     opacity: 0.9;
 }
@@ -804,6 +803,11 @@
     .n-a-p_title h3 {
         font-size: 24px;
     }
+
+    #light {
+        margin-left: -335px;
+        margin-top: -370px;
+    }
 }
 
 /* responsive mobile */
@@ -937,5 +941,18 @@
 
     .n-a-p_title h3 {
         font-size: 20px;
+    }
+
+    #light {
+        top: 80%;
+        left: 91%;
+    }
+
+    #wiacrn {
+        width: 360px;
+    }
+
+    #boxclose {
+        right: 2px;
     }
 }

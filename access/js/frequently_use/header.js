@@ -1,6 +1,7 @@
 // Start: scroll transparent on/off
 $(window).on("scroll", function() {
-    if($(window).scrollTop() > 40) {
+  var height = $('header').height();
+    if($(window).scrollTop() >  $('header').height()) {
         $("header").addClass("active");
     } else {
        $("header").removeClass("active");
@@ -8,26 +9,15 @@ $(window).on("scroll", function() {
 });
 // End: scroll transparent on/off
 
-
-window.document.onkeydown = function (e) {
-  if (!e) {
-    e = event;
-  }
-  if (e.keyCode == 27) {
-    lightbox_close();
-  }
-}
-
 function lightbox_open() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  window.scrollTo(0, 0);
+  var lightBoxVideo = document.getElementById("wiacrn");
   document.getElementById('light').style.display = 'block';
   document.getElementById('fade').style.display = 'block';
   lightBoxVideo.play();
 }
 
 function lightbox_close() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  var lightBoxVideo = document.getElementById("wiacrn");
   document.getElementById('light').style.display = 'none';
   document.getElementById('fade').style.display = 'none';
   lightBoxVideo.pause();
