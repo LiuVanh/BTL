@@ -9,13 +9,13 @@
 
 .home_intro-content {
     text-align: left;
-    max-width: 50%;
     padding-left: 9rem;
 }
 
 .home_intro-img img {
     max-width: 70%;
     height: auto;
+    overflow: hidden;
 }
 
 .home_intro-content h2 {
@@ -26,7 +26,7 @@
 .home_intro-content span {
     font-size: 14px;
     font-weight: 750;
-    color: #6f42c1;
+    color: rgb(111, 66, 193);
     text-transform: uppercase;
     opacity: 0.5;
 }
@@ -46,6 +46,7 @@
     font-size: 15px;
     margin: 5px 20px;
 }
+
 /* End: home intro */
 /* ------------------------------------- */
 /* start: Covid statics */
@@ -53,7 +54,7 @@
     display: block;
     padding: 5rem 0 5rem 0;
     margin: 0 80px;
-    
+
 }
 
 .covid_statics-heading {
@@ -80,7 +81,7 @@
 .covid_statics-data {
     display: flex;
     flex-direction: column;
-    max-width: 33,33%;
+    max-width: 33, 33%;
     min-width: 300px;
     padding: 10px 15px;
 }
@@ -99,13 +100,14 @@
     font-size: 18px;
     opacity: 0.6;
 }
+
 /* End: covid statics */
 /* ------------------------------------- */
 /* Start:about corona part 1 */
 #about-crn_1 {
     display: flex;
     justify-content: center;
-    margin: 30px 90px 10px 90px; 
+    margin: 30px 90px 10px 90px;
     padding: 30px 0px 30px 0px;
 }
 
@@ -198,7 +200,7 @@
     opacity: .80;
     filter: alpha(opacity=80);
 }
-  
+
 #light {
     display: none;
     position: absolute;
@@ -213,7 +215,7 @@
     z-index: 1002;
     overflow: visible;
 }
-  
+
 #boxclose {
     cursor: pointer;
     color: #fff;
@@ -231,18 +233,19 @@
     z-index: 1002;
     opacity: 0.9;
 }
-  
+
 .boxclose:before {
     content: "x";
 }
-  
-#fade:hover ~ #boxclose {
-    display:none;
-}
-  
-.test:hover ~ .test2 {
+
+#fade:hover~#boxclose {
     display: none;
 }
+
+.test:hover~.test2 {
+    display: none;
+}
+
 /* End: about corona part 1*/
 /* ------------------------------------- */
 /* Start: about corona part 2 */
@@ -270,15 +273,16 @@
     max-width: 150px;
 }
 
-.about-crn_2-content label{
+.about-crn_2-content label {
     font-size: 14px;
     font-weight: 700;
-    color:rgb(111, 66, 193);
+    color: rgb(111, 66, 193);
 }
 
 .about-crn_2-content p {
     opacity: 0.8;
 }
+
 /* End: about corona part 2 */
 /* ------------------------------------- */
 /* Start: how2 prevent */
@@ -391,25 +395,26 @@
     margin: 7px 2px;
     text-transform: uppercase;
 }
+
 /* End: how2 prevent */
 /* ------------------------------------- */
 /* Start: symptoms */
 #idx_symptoms {
     background-color: rgba(111, 66, 193, 0.05);
-    height: 970px;
+    height: auto;
 }
 
 .st_heading {
     text-align: center;
     max-width: 600px;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 90px;
     padding-top: 90px;
     margin-bottom: 90px;
 }
 
 .st_heading h3 {
-    color:rgb(111, 66, 193);
+    color: rgb(111, 66, 193);
     font-weight: 700;
     font-size: 30px;
 }
@@ -423,7 +428,8 @@
 .st_detail {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 250px;
+    justify-content: space-around;
+    margin: 0 7rem;
     margin-bottom: 40px;
 }
 
@@ -431,7 +437,7 @@
     display: flex;
     margin: 10px 10px;
     padding: 30px;
-    width: 496px;
+    width: 522px;
     align-items: center;
     background-color: #fff;
     border: 1px solid white;
@@ -440,7 +446,7 @@
     padding: 30px;
 }
 
-.st_img img{
+.st_img img {
     width: 80px;
     height: 102px;
 }
@@ -467,6 +473,7 @@
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 20px;
+    padding-bottom: 4rem;
 }
 
 .dr-advice_content {
@@ -483,10 +490,10 @@
 
 .st_dr-advice button {
     display: inline;
-    width: 140px;
+    width: 150px;
     border-radius: 30px;
     font-size: 14px;
-    padding: 5px 0px;
+    padding: 6px 0px;
     color: white;
     background-color: #6f42c1;
     text-transform: uppercase;
@@ -495,6 +502,7 @@
 .dr-advice_icon {
     padding-right: 10px;
 }
+
 /* End: symptoms */
 /* ------------------------------------- */
 /* Start: News & Articles */
@@ -505,14 +513,13 @@
 .n-a_heading {
     text-align: center;
     max-width: 600px;
-    margin:0 auto;
-    margin-top: 90px;
+    margin: 0 auto;
     padding-top: 90px;
     margin-bottom: 90px;
 }
 
 .n-a_heading h3 {
-    color:rgb(111, 66, 193);
+    color: rgb(111, 66, 193);
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 20px;
@@ -531,7 +538,7 @@
 
 .n-a_post-entry {
     position: relative;
-    width: 33,3%;
+    width: 33, 3%;
     margin: 0 15px;
 }
 
@@ -545,7 +552,7 @@
 
 .idx_date-post {
     position: absolute;
-    left: 100px;
+    left: 78px;
     top: 180px;
     padding: 4px 14px;
     font-size: 14px;
@@ -575,4 +582,360 @@
     font-weight: 500;
     text-align: center;
 }
+
 /* End: News & Articles */
+/* ------------------------------------- */
+/* ------------------------------------- */
+/* Responsive: tablet */
+@media screen and (max-width: 1023px) {
+    #home_intro {
+        padding-top: 7rem;
+        display: block;
+        border-bottom-right-radius: 50%;
+        background: rgba(111, 66, 193, 0.1);
+        height: 750px;
+    }
+
+    .home_intro-content {
+        text-align: center;
+        padding: 0 4rem;
+    }
+
+    .home_intro-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home_intro-img img {
+        overflow: hidden;
+        max-width: 100%;
+        border-style: none;
+    }
+
+    .home_intro-content h2 {
+        color: rgb(111, 66, 193);
+        font-weight: 750;
+    }
+
+    .home_intro-content span {
+        font-size: 14px;
+        font-weight: 750;
+        color: #6f42c1;
+        text-transform: uppercase;
+        opacity: 0.5;
+    }
+
+    .home_intro-content p {
+        opacity: 1;
+        color: rgb(47, 47, 47);
+    }
+
+    .home_intro-content button {
+        opacity: 1;
+        color: #fff;
+        background-color: #6f42c1;
+        border-radius: 30px;
+        border: 1px solid white;
+    }
+
+    .home_intro-content button p {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 15px;
+        margin: 5px 20px;
+    }
+    
+    #covid_statics {
+        margin: 0;
+    }
+
+    .covid_statics-heading {
+        padding-bottom: 0;
+    }
+
+    .covid_statics-number {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .covid_statics-data {
+        padding-top: 2rem;
+    }
+
+    #about-crn_1 {
+        display: block;
+        margin: 0;
+    }
+
+    .img-play-vid img {
+        width: 98%;
+        height: 98%;
+        padding-left: 0.8rem ;
+    }
+
+    .img-play-vid_btn {
+        left: 572px;
+        bottom: 50px;
+        line-height: 50px;
+    }
+
+    .about-crn_content {
+        max-width: 90%;
+        padding: 0 2rem;
+    }
+
+    #about-crn_2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-crn_2-col {
+        align-items: center;
+        padding: 0;
+        width: 300px;
+    }
+
+    #how2-prevent {
+        padding: 3rem 0;
+        flex-direction: column;
+    }
+
+    .h2p_col-content {
+        justify-content: center;
+        margin: 0;
+        height: 550px;
+    }
+
+    .h2p_sub-col-content_1 {
+        padding: 0;
+        width: 350px;
+        max-height: 300px;
+    }
+
+    .h2p_sub-col-content_2 {
+        width: 350px;
+        max-height: 300px;
+    }
+
+    .mini-col_icon {
+        width: 350px;
+    }
+
+    .h2p_side-content {
+        margin: 0 2rem;
+    }
+
+    .h2p_side-label {
+        text-align: center;
+    }
+
+    .sml-than-label {
+        width: auto;
+    }
+
+    .sml-than-labe ul {
+        display: flex;
+    }
+
+    #idx_symptoms {
+        height: auto;
+    }
+
+    .st_heading {
+        padding-top: 4rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .st_detail {
+        margin: 0 1rem;
+    }
+
+    .st_detail-box {
+        width: auto;
+        padding: 15px 30px;
+    }
+
+    .st_dr-advice {
+        display: block;
+        margin: 1rem;
+        padding: 1rem 1rem 5rem 1rem;
+        text-align: left;
+    }
+
+    .st_dr-advice button {
+        margin-top: 1rem;
+    }
+
+    #news-articles {
+        margin: 0;
+    }
+
+    .n-a_heading {
+        margin-bottom: 1rem;
+    }
+
+    .news-post_row {
+        flex-direction: column;
+    }
+
+    .n-a-p_thumb img {
+        height: auto;
+    }
+
+    .idx_date-post {
+        position: relative;
+        top: 500px;
+        left: 310px;
+        padding: 9px 24px;
+        font-size: 16px;
+    }
+
+    .post-reaction a{
+        font-size: 22px;
+    }
+
+    .n-a_post-entry {
+        margin-top: 2rem;
+    }
+
+    .n-a-p_title h3 {
+        font-size: 24px;
+    }
+}
+
+/* responsive mobile */
+@media screen and (max-width: 666px) {
+    #home_intro,
+    #covid_statics,
+    #about-crn_1,
+    #about-crn_2,
+    #how2-prevent,
+    #idx_symptoms,
+    #new-articles {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #home_intro {
+        height: 650px;
+    }
+
+    .home_intro-content span {
+        color: rgb(165, 131, 228);
+        opacity: 1;
+    }
+
+    .home_intro-content {
+        padding: 0;
+    }
+
+    #covid_statics {
+        padding-bottom: 2rem;
+    }
+
+    .img-play-vid img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .img-play-vid_btn {
+        font-size: 18px;
+        width: 150px;
+        left: 205px;
+        bottom: 30px;
+        line-height: 30px;
+    }
+
+    .about-crn_content {
+        padding: 0;
+    }
+
+    #about-crn_2 {
+        display: flex;
+        max-width: 100%;
+        margin: 0;
+        padding: 2rem 0;
+    }
+
+    .about-crn_2-col {
+        font-size: 18px;
+        width: 180px;
+    }
+
+    #how2-prevent {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .h2p_col-content {
+       width: 100%;
+       margin-bottom: 4rem;
+    }
+
+    .h2p_sub-col-content_1 {
+        width: 170px;
+    }
+
+    .h2p_sub-col-content_2 {
+        width: 170px;
+    }
+
+    .h2p_mini-col_1 {
+        height: 300px;
+    }
+
+    .mini-col_content_1 {
+        height: 100%;
+    }
+
+    .mini-col_icon {
+       width: 170px;
+    }
+
+    .h2p_side-content {
+        margin: 0.5rem;
+        display: block;
+    }
+
+    .h2p_side-label {
+        text-align: left;
+        margin: 0;
+    }
+
+    .st_detail {
+        margin: 0;
+    }
+
+    .st_detail-box {
+        margin: 0 0 15px 0;
+        padding: 10px 5px;
+    }
+
+    .st_dr-advice {
+        margin-top: 0;
+    }
+
+    .idx_date-post {
+        position: relative;
+        top: 240px;
+        left: 112px;
+        padding: 4px 16px;
+        font-size: 14px;
+    }
+
+    .post-reaction a{
+        font-size: 16px;
+    }
+
+    .n-a_post-entry {
+        margin-top: 2rem;
+    }
+
+    .n-a-p_title h3 {
+        font-size: 20px;
+    }
+}

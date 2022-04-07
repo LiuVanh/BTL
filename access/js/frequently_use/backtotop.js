@@ -12,15 +12,6 @@ const goToTop = () => {
 };
 
 document.addEventListener("scroll", () => {
-  console.log("Scroll Height: ", scrollContainer().scrollHeight);
-  console.log("Client Height: ", scrollContainer().clientHeight);
-
-  const scrolledPercentage =
-    (scrollContainer().scrollTop /
-      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
-    100;
-
-
   if (scrollContainer().scrollTop > showOnPx) {
     backToTopButton.classList.remove("hidden");
   } else {

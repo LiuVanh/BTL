@@ -1,16 +1,17 @@
 /* CSS for laptop */
-@media screen and (min-width : 1024px){
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 
 header {
@@ -18,7 +19,7 @@ header {
     display: flex;
     font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-size: 19px;
     background-color: transparent;
     transition: all 0.2s ease-in-out;
@@ -57,7 +58,7 @@ li {
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-left: 15rem;
+    margin-right: 10rem;
     height: inherit;
 }
 
@@ -79,4 +80,107 @@ li {
     font-size: 32px;
     margin-left: 8rem;
 }
+
+
+/* responsive */
+.nav-rp-btn {
+    display: none;
+    height: 28px;
+    width: 28px;
+    margin-left: 20px;
+    margin-right: 1rem;
 }
+
+.nav_overlay {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2;
+}
+
+.main-menu_rps {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 300px;
+    max-width: 100%;
+    transform: translateX(100%);
+    transition: all linear 0.2s, opacity linear 0.2s;
+}
+
+#nav-rps-input {
+    display: none;
+}
+
+#nav-rps-input:checked ~  .nav_overlay {
+    display: block;
+}
+
+#nav-rps-input:checked ~ .main-menu_rps {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1230px) {
+    .main-menu .long-stc {
+        display: flex;
+        text-align: center;
+       }
+}
+
+@media screen and (max-width: 1023px) {
+    .logo-web {
+        margin: 10%;
+    }
+
+    .nav-rp-btn {
+        display: block;
+    }  
+    .main-menu {
+        display: none;
+    }
+
+    .nav_close-rps-btn {
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        opacity: 0.5;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        bottom: 0;
+    }
+
+    .main-menu_rps {
+        padding: 0 20px;
+        padding-top: 80px;
+        margin: 0;
+    }
+
+    .main-menu_rps li {
+        width: 260px;
+        padding: 8px 20px;
+    }
+
+    .main-menu_rps li .main-menu_link_rps {
+        width: 100%;
+        line-height: 40px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

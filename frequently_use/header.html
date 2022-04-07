@@ -8,22 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./access/css/frequently_use/header.css">
+    <link rel="stylesheet" href="../access/css/frequently_use/header.css">
     <title>header</title>
 </head>
 
 <body>
     <!--Start: header-->
     <header>
-        <a class="logo-web" href="">Covid.</a>
+        <a class="logo-web" href="index.html">Covid.</a>
         <ul class="main-menu">
             <li><a class="main-menu_link" href="">Home</a></li>
-            <li><a class="main-menu_link" href="get_vaccinated_1.html">Get Vaccinated</a></li>
-            <li><a class="main-menu_link" href="../symptoms.html">Symptoms</a></li>
+            <li><a class="main-menu_link" href="get_vaccinated.html">Get Vaccinated</a></li>
+            <li><a class="main-menu_link" href="symptoms.html">Symptoms</a></li>
             <li><a class="main-menu_link" href="">About</a></li>
             <li><a class="main-menu_link" href="">Blog</a></li>
             <li><a class="main-menu_link" href="contact.html">Contact</a></li>
-            <li style="position:absolute; right: 0; top: 5;"><a class="login_icon" href="log_in_admin.html"><i class="fa-solid fa-circle-user"></i></a>
+            <li style="position:absolute; right: 0; top: 5;"><a class="login_icon" href="log_in_admin.html"><i
+                        class="fa-solid fa-circle-user"></i></a>
+            </li>
+        </ul>
+        <label for="nav-rps-input" class="nav-rp-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" id="nav-rps-input">
+        <label for="nav-rps-input" class="nav_overlay"></label>
+        <ul class="main-menu_rps">
+            <label for="nav-rps-input" class="nav_close-rps-btn">
+                <i class="fa-solid fa-xmark nav_close-btn"></i>
+            </label>
+            <li><a class="main-menu_link_rps" href="index.html">Home</a></li>
+            <li><a class="main-menu_link_rps" href="get_vaccinated.html">Get Vaccinated</a></li>
+            <li><a class="main-menu_link_rps" href="symptoms.html">Symptoms</a></li>
+            <li><a class="main-menu_link_rps" href="">About</a></li>
+            <li><a class="main-menu_link_rps" href="">Blog</a></li>
+            <li><a class="main-menu_link_rps" href="contact.html">Contact</a></li>
             </li>
         </ul>
     </header>
