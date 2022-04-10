@@ -44,6 +44,6 @@ register.addEventListener('click', function(e){
         document.getElementById("form-login_info_pw").style.bottom = '35px'
     }
     if(checkUserName()==true && checkPassword()==true){
-        location.href="index.html"
+        location.href="admin/index.html"
     }
 })
