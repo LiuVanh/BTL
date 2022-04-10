@@ -1,0 +1,29 @@
+header{
+    background-color: rgba(111, 66, 193, 0.1);
+    height: 100px;
+    width:100%;
+    position: relative;
+}
+.main-menu{
+    display: flex;
+    position: absolute;
+    top:35px;
+    left:80px;
+}
+.main-menu .main-menu_link1{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#808080;
+}
+.main-menu .main-menu_link1 i{
+}
+.main-menu .main-menu_link2{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#808080;
+    margin-left: 1150px;
+}
