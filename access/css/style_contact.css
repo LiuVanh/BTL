@@ -11,6 +11,10 @@
 .site-section .hero-v1 .row-form .col{
     line-height: 27.2px;
 }
+.site-section .hero-v1 .row-form .col .row{
+    width:100%;
+    margin:0 0 0 0;
+}
 .site-section .hero-v1 .row-form .col .row span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -18,6 +22,7 @@
     line-height: 20.4px;
     color:rgba(111, 66, 193, 0.5);
     margin-top: 80px;
+    padding:0 0 0 0;
 }
 .site-section .hero-v1 .row-form .col .row h1{
     font-size: 40px;
@@ -25,12 +30,14 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: 48px;
     color:#6F42C1;
+    padding:0 0 0 0;
 }
 .site-section .hero-v1 .row-form .col .row p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27.2px;
     color:#808080;
+    padding:0 0 0 0;
 }
 /* CSS for FormContact */
 #rowformcontact{
