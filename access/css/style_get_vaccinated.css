@@ -8,6 +8,7 @@ section{
   width:100%;
 }
 /* CSS */
+
 .steps {
     display: flex;
     justify-content: space-between;
@@ -139,15 +140,16 @@ section{
 }
 .rowstep1 select{
     font-size: 16px;
-    width:350px;
+    width:300px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;
     margin-bottom: 20px;
 }
+
 select{
     font-size: 16px;
-    width:350px;
+    width:300px;
     height: 38px;
     border:1px solid #808080;
     border-radius: 3px;

@@ -413,3 +413,76 @@ body {
   font-size: 18px;
 }
 /* End: covid statics */
+
+#footer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 120px;
+  align-items: center;
+}
+
+#footer .row {
+  display: flex;
+}
+
+#footer .row .col1 {
+  max-width: 30%;
+  padding-right: 50px;
+}
+
+#footer .row .col2,
+#footer .row .col3,
+#footer .row .col4 {
+  padding-right: 80px;
+}
+
+.col1 p {
+  line-height: 35px;
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+
+.col1 a {
+  padding-right: 30px;
+  margin-top: 30px;
+  color: #845dce;
+}
+
+.col1 h2,
+.col2 h2,
+.col3 h2,
+.col4 h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: 50;
+}
+
+.col2 .links,
+.col3 .links,
+.col4 .links {
+  margin-bottom: 15px;
+}
+
+.col2 .links a,
+.col3 .links a,
+.col4 .links a {
+  font-weight: 550;
+  color: #845dce;
+}
+
+#footer .last-item {
+  margin-top: 120px;
+}
+
+#footer .last-item p {
+  font-size: 18px;
+}
+
+.last-item p a {
+  color: #6f42c1;
+}
+
+.fa-heart {
+  color: red;
+}

@@ -3,7 +3,7 @@
 }
 /* Blog Posts */
 .blog-posts {
-  margin-top: 70px;
+  padding-top: 70px;
   width: 100%;
   height: 370px;
   background-color: #f0ecf9;
@@ -48,6 +48,7 @@
 /* News */
 
 .news {
+  max-width: 1379px;
   padding-top: 100px;
 }
 
@@ -78,8 +79,8 @@
   height: fit-content;
   margin: 70px 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px 30px;
+  grid-template-columns: repeat(3, 32%);
+  margin-left: 20px;
 }
 
 .post {
@@ -93,8 +94,8 @@
 }
 
 .post img {
-  height: 100%;
-  width: 100%;
+  width: 80%;
+  height: auto;
   object-fit: cover;
   position: relative;
 }
@@ -111,7 +112,7 @@
   width: 120px;
   margin: 0 auto;
   margin-top: -20px;
-  z-index: 10000;
+  z-index: 999;
 }
 
 .post .info {
@@ -169,66 +170,77 @@
   color: #6f42c1;
 }
 
-.footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: fit-content;
-  padding: 50px 200px;
-  margin-top: 50px;
-}
-
-.footer .footer-item {
-  margin: 0 25px;
-}
-
-.footer-item .title {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19.2px;
-  margin: 0px 0px 24px;
-  text-align: left;
-}
-
-.about .desc {
-  color: rgba(0, 0, 0, 0.711);
-  line-height: 22.2px;
-  margin: 0px 0px 16px;
-  text-align: left;
-  font-size: 15px;
-}
-
-.about .icons {
+#footer {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.about .icons i {
-  font-size: 18px;
-  margin: 10px;
-  color: #6f42c1;
-}
-
-.footer-item .menu {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
-}
-.footer-item .menu .item {
-  margin: 10px 0;
-}
-.footer-item .menu .item a {
-  font-size: 16px;
-  color: #6f42c1;
-  font-weight: 600;
+  margin: 50px 120px;
+  align-items: center;
 }
 
-.footer-text {
+#footer .row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0;
+}
+
+#footer .row .col1 {
+  max-width: 30%;
+  padding-right: 50px;
+}
+
+#footer .row .col2,
+#footer .row .col3,
+#footer .row .col4 {
+  padding-right: 80px;
+}
+
+.col1 p {
+  line-height: 35px;
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+
+.col1 a {
+  padding-right: 30px;
+  margin-top: 30px;
+  color: #845dce;
+}
+
+.col1 h2,
+.col2 h2,
+.col3 h2,
+.col4 h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: 50;
+}
+
+.col2 .links,
+.col3 .links,
+.col4 .links {
+  margin-bottom: 15px;
+}
+
+.col2 .links a,
+.col3 .links a,
+.col4 .links a {
+  font-weight: 550;
+  color: #845dce;
+}
+
+#footer .last-item {
+  margin-top: 120px;
+}
+
+#footer .last-item p {
+  font-size: 18px;
+}
+
+.last-item p a {
+  color: #6f42c1;
+}
+
+.fa-heart {
+  color: red;
 }
 
 .menu .fa-times,
@@ -240,6 +252,7 @@
 .subnav2-mobile {
   display: none;
 }
+
 @media screen and (max-width: 1023px) {
   .container {
     width: 100%;
