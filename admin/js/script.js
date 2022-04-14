@@ -20,7 +20,7 @@ function leaveNumber(){
 let Name = document.getElementById('Name');
 let statusOfName = document.getElementById('statusOfName')
 function checkName(){
-    let NameRegex = /^[a-zA-Z]+$/;
+    let NameRegex = /^[\w\s]+$/;
     if(NameRegex.test(Name.value)){
         return true
     }

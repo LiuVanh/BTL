@@ -20,7 +20,7 @@ Array.from(stepButtons).forEach((button,index) => {
 // JS for step1
 function checkCity(){
     let City = document.getElementById('txtCity');
-    let CityRegex = /^[a-zA-Z]+$/;
+    let CityRegex = /^[\w\s]+$/;
     if(CityRegex.test(City.value)){
         return true
     }
@@ -29,7 +29,7 @@ function checkCity(){
 
 function checkDistrict(){
     let District = document.getElementById('txtDistrict');
-    let DistrictRegex = /^[a-zA-Z]+$/;
+    let DistrictRegex = /^[\w\s]+$/;
     if(DistrictRegex.test(District.value)){
         return true
     }
@@ -38,7 +38,7 @@ function checkDistrict(){
 
 function checkWards(){
     let Wards = document.getElementById('txtWards');
-    let WardsRegex = /^[a-zA-Z]+$/;
+    let WardsRegex = /^[\w\s]+$/;
     if(WardsRegex.test(Wards.value)){
         return true
     }
@@ -47,7 +47,7 @@ function checkWards(){
 
 function checkName(){
     let Name = document.getElementById('txtName');
-    let NameRegex = /^[a-zA-Z]+$/;
+    let NameRegex = /^[\w\s]+$/;
     if(NameRegex.test(Name.value)){
         return true
     }
@@ -99,7 +99,7 @@ function checkInjection(){
 
 function checkContactAddress(){
     let ContactAddress = document.getElementById('txtContactAddress');
-    let ContactAddressRegex = /^[a-zA-Z]+$/;
+    let ContactAddressRegex = /^[\w\s]+$/;
     if(ContactAddressRegex.test(ContactAddress.value)){
         return true
     }
@@ -108,7 +108,7 @@ function checkContactAddress(){
 
 function checkPhoneNumber(){
     let PhoneNumber = document.getElementById('txtPhoneNumber');
-    let PhoneNumberRegex = /^[0-9]{9,11}$/;
+    let PhoneNumberRegex = /^[0-9]{10}$/;
     if(PhoneNumberRegex.test(PhoneNumber.value)){
         return true
     }

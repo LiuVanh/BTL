@@ -187,64 +187,6 @@
     text-transform: uppercase;
 }
 
-#fade {
-    display: none;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 1001;
-    -moz-opacity: 0.8;
-    opacity: .80;
-    filter: alpha(opacity=80);
-}
-
-#light {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 47%;
-    max-width: 600px;
-    max-height: 360px;
-    margin-left: -300px;
-    margin-top: -180px;
-    background: #FFF;
-    z-index: 1002;
-    overflow: visible;
-}
-
-#boxclose {
-    cursor: pointer;
-    color: #fff;
-    border: 1px solid #AEAEAE;
-    border-radius: 2px;
-    background: #222222;
-    font-size: 30px;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 0px;
-    padding: 10px 2px;
-    position: absolute;
-    right: -113px;
-    top: 4px;
-    z-index: 1002;
-    opacity: 0.9;
-}
-
-.boxclose:before {
-    content: "x";
-}
-
-#fade:hover~#boxclose {
-    display: none;
-}
-
-.test:hover~.test2 {
-    display: none;
-}
-
 /* End: about corona part 1*/
 /* ------------------------------------- */
 /* Start: about corona part 2 */
@@ -667,16 +609,15 @@
         margin: 0;
     }
 
-    .img-play-vid img {
-        width: 98%;
-        height: 98%;
-        padding-left: 0.8rem ;
+    .img-play-vid {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
     }
 
-    .img-play-vid_btn {
-        left: 572px;
-        bottom: 50px;
-        line-height: 50px;
+    .img-play-vid iframe {
+        width: 660px;
+        height: 360px;
     }
 
     .about-crn_content {
@@ -838,19 +779,6 @@
 
     #covid_statics {
         padding-bottom: 2rem;
-    }
-
-    .img-play-vid img {
-        width: 100%;
-        padding: 0;
-    }
-
-    .img-play-vid_btn {
-        font-size: 18px;
-        width: 150px;
-        left: 205px;
-        bottom: 30px;
-        line-height: 30px;
     }
 
     .about-crn_content {
