@@ -11,7 +11,7 @@ const formLogin = document.querySelectorAll('.form-text input')
             }
 function checNew(){
     let New = document.getElementById('txtNew');
-    let NewRegex = /^[a-zA-Z]+$/;
+    let NewRegex = /^[0-9]+$/;
     if(NewRegex.test(New.value)){
         return true
     }

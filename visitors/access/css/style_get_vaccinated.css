@@ -4,11 +4,9 @@
     --prm-color: #0381ff;
     --prm-gray: #b1b1b1;
 }
-section{
-  width:100%;
-}
-/* CSS */
 
+
+/* CSS */
 .steps {
     display: flex;
     justify-content: space-between;
@@ -187,7 +185,7 @@ select{
 }
 /* CSS for step 2 */
 .row{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 10px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -210,6 +208,7 @@ select{
 .rowbtn2{
     display:flex;
 }
+
 .rowbtnctn2 input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -238,7 +237,7 @@ select{
 /* CSS for step 3 */
 .site-sections{
     height:441px;
-    width:1260px;
+    width: auto;
     padding:90px 0 90px 0;
     text-align: center;
     background-color: rgba(111, 66, 193, 0.1);
@@ -259,9 +258,7 @@ select{
     line-height: 27.2px;
     color:#808080;
 }
-.rowbtn3{
-    display:flex;
-}
+
 .rowbtnctn3 input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -566,7 +563,7 @@ select{
     border-radius: 20px;
     background-color: #6F42C1;
     margin-top: 31px;
-    margin-left: 260px;
+
 }
 #footer{
     font-family:Arial, Helvetica, sans-serif;
